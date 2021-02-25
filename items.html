@@ -1,0 +1,16 @@
+---
+layout: default
+title: Items
+---
+
+<h1>아이템 목록</h1>
+
+<ul>
+  {% for item in site.items %}
+  <li>
+    <h2><a href="{{ item.url | relative_url }}">{{ item.name }}</a></h2>
+    <h3>{{ item.description }}</h3>
+    <p>{{ item.excerpt | markdownify }}</p>
+  </li>
+  {% endfor %}
+</ul>

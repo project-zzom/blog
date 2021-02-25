@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date: "%Y-%m-%d %H:%M" }} / {{ page.author }}</p>
+{{ content }}
+{% if site.comments.facebook.appid %}
+{% include fb-like-button.html %}
+{% endif %}
+
+{% assign filtered_items = site.items | where: 'name', page.item %}
+{% if filtered_items.size > 0 %}
+<h2>관련 아이템</h2>
+
+<ul>
+{% for item in filtered_items %}
+  <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if site.comments.facebook.appid %}
+<h2>댓글</h2>
+{% include fb-comments.html %}
+{% endif %}

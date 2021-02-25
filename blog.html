@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+---
+<h1>최신 게시물 (제목 + 발췌)</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h1>최신 게시물 (제목 + 댓글 수)</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if site.comments.facebook.appid %}
+     (댓글 <span class="fb-comments-count" data-href="{{ post.url | absolute_url }}"></span>개)
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
