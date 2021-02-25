@@ -1,6 +1,7 @@
 ---
-name: 아이템2
-description: 아이템 설명
+name: 처음 배우는 그래픽 레코딩
+description: 그래픽 레코딩 입문서
+excerpt_separator: <!--more-->
 ---
 
 반짝이는 황금시대를 우리 피고, 풍부하게 그들은 천자만홍이 눈에 것이다.

@@ -1,3 +1,3 @@
 # 연락처
 
-* codelabor@gmail.com
+* project-zzom@gmail.com

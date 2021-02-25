@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://codelabor.github.io/github-pages-examples/sitemap.xml
-Sitemap: http://codelabor.github.io/github-pages-examples/sitemap.xml

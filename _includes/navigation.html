@@ -1,7 +1,7 @@
 <nav>
   <ul>
-  {% for item in site.data.navigation %}
-    <li><a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+  {% for menu in site.data.navigation %}
+    <li><a href="{{ menu.link | relative_url }}" {% if page.url == menu.link %}class="current"{% endif %}>{{ menu.name }}</a></li>
   {% endfor %}
   </ul>
 </nav>

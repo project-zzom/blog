@@ -8,7 +8,7 @@ layout: default
 
 <h2>관련 게시물</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'item', page.name %}
+  {% assign filtered_posts = site.posts | where: 'book', page.name %}
   {% for post in filtered_posts %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}

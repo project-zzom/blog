@@ -1,6 +1,7 @@
 ---
-name: 아이템1
-description: 아이템 설명
+name: 출근했더니 스크럼 마스터가 된 건에 관하여
+description: 스크럼 입문서
+excerpt_separator: <!--more-->
 ---
 
 반짝이는 황금시대를 우리 피고, 풍부하게 그들은 천자만홍이 눈에 것이다.
