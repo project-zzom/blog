@@ -6,7 +6,7 @@ layout: default
 
 {{ page.content }}
 
-<h2>관련 게시물</h2>
+<h1>관련 게시물</h1>
 <ul>
   {% assign filtered_posts = site.posts | where: 'book', page.name %}
   {% for post in filtered_posts %}
