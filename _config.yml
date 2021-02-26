@@ -1,7 +1,7 @@
 
 title: Project ZZOM
 description: 1인출판 프로젝트
-logo: "assets/images/zzom-logo-dark (200 x 200).png"
+logo: "assets/images/zzom-logo-light (200 x 200).png"
 theme: jekyll-theme-minimal
 lang: ko-KR
 collections: 
@@ -32,4 +32,4 @@ comments:
     num_posts: 10
     order_by: "reverse_time"
 paginate: 2
-paginate_path: "/blog/page:num/"  
+paginate_path: "/blog/page:num/"

@@ -1,3 +1,25 @@
 a.current {
-  color: green;
+  color:#069;
+  font-weight: bold;
+}
+
+#site-logo {
+  width: 270px;
+  display: block;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+#navigation {
+  text-align: left;
+}
+
+#pagination {
+  text-align: center;
 }

@@ -1,10 +1,18 @@
-- name: Home
+- name: 홈
   link: /
-- name: About
+  target: _self
+- name: 프로젝트 소개
   link: /about.html
-- name: Blog
+  target: _self  
+- name: 책 만드는 이야기
   link: /blog.html
-- name: Books
+  target: _self  
+- name: 작품 목록 (ZZOM 오리지널)
   link: /books.html
-- name: Contacts
+  target: _self  
+- name: 작품 목록 (타사 콜라보)
+  link: https://codelabor.github.io/translating-developer/  
+  target: _blank  
+- name: 관련 링크
   link: /contacts.html
+  target: _self  
