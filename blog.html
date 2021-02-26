@@ -8,7 +8,11 @@ title: Blog
   {% for post in site.posts %}
   <li>
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
+    <!-- <span class="author">{{ post.author }}</span> -->
+    <span class="date">{{ post.date | date: '%Y-%m-%d %H:%M' }}</span>
+    <div class="content">
+      {{ post.excerpt }}
+    </div>
   </li>
   {% endfor %}
 </ul>
