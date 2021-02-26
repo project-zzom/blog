@@ -12,6 +12,9 @@ title: Blog
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <!-- <span class="author">{{ post.author }}</span> -->
     <span class="date">{{ post.date | date: '%Y-%m-%d %H:%M' }}</span>
+    {% if site.comments.facebook.appid %}
+    (댓글 <span class="fb-comments-count" data-href="{{ post.url | absolute_url }}"></span>개)
+    {% endif %}
     <div class="content">
       {{ post.excerpt }}
     </div>

@@ -1,3 +1,3 @@
-# 연락처
+# 관련 링크
 
 * project-zzom@gmail.com

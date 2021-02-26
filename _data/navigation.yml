@@ -1,11 +1,12 @@
-- name: 홈
-  link: /
-  target: _self
+# - name: 홈
+#   link: /
+#   target: _self
 - name: 프로젝트 소개
   link: /about.html
   target: _self  
 - name: 책 만드는 이야기
-  link: /blog.html
+  # link: /blog.html
+  link: /
   target: _self  
 - name: 작품 목록 (ZZOM 오리지널)
   link: /books.html

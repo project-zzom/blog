@@ -40,12 +40,7 @@ a {
   text-decoration:none;
 }
 
-// a:hover, a:focus {
-//   color:#069;
-//   font-weight: bold;
-// }
-
-a:hover {
+a:hover, a:focus {
   color:#069;
   font-weight: bold;
 }
