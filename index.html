@@ -12,7 +12,7 @@ title: Blog
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <!-- <span class="author">{{ post.author }}</span> -->
     <span class="date">{{ post.date | date: '%Y-%m-%d %H:%M' }}</span>
-    {% if site.comments.facebook.appid %}
+    {% if site.facebook.comments_count %}
     (댓글 <span class="fb-comments-count" data-href="{{ post.url | absolute_url }}"></span>개)
     {% endif %}
     <div class="content">
@@ -26,14 +26,14 @@ title: Blog
 {% if paginator.total_pages > 1 %}
 <div id="pagination">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  <a href="{{ paginator.previous_page_path | relative_url }}">&#10096; Prev</a>
   {% else %}
-  <span>&laquo; Prev</span>
+  <span>&#10096; Prev</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <em>{{ page }}</em>
+      <b>{{ page }}</b>
     {% elsif page == 1 %}
       <a href="{{ '/' | relative_url }}">{{ page }}</a>
     {% else %}
@@ -42,9 +42,9 @@ title: Blog
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &#10097;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <span>Next &#10097;</span>
   {% endif %}
 </div>
 {% endif %}

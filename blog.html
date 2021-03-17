@@ -24,8 +24,8 @@ title: Blog
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% if site.comments.facebook.appid %}
-     (댓글 <span class="fb-comments-count" data-href="{{ post.url | absolute_url }}"></span>개)
+    {% if site.facebook.comments_count %}
+     (댓글 <span class="facebook" data-href="{{ post.url | absolute_url }}"></span>개)
     {% endif %}
   </li>
   {% endfor %}

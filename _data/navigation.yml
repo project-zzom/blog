@@ -8,11 +8,11 @@
   # link: /blog.html
   link: /
   target: _self  
-- name: 작품 목록 (ZZOM 오리지널)
+- name: 작품 목록
   link: /books.html
   target: _self  
-- name: 작품 목록 (타사 콜라보)
-  link: https://codelabor.github.io/translating-developer/  
+# - name: 작품 목록 (타사 콜라보)
+#   link: https://codelabor.github.io/translating-developer/  
   target: _blank  
 - name: 관련 링크
   link: /contacts.html

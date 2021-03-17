@@ -12,12 +12,12 @@
     <![endif]-->
     {% seo %}
     {% feed_meta %}
-    {% if site.comments.facebook.appid %}
+    {% if site.facebook.appid %}
     {% include fb-meta.html %}
     {% endif %}
   </head>
   <body>
-    {% if site.comments.facebook.appid %}
+    {% if site.facebook.appid %}
     {% include fb-jssdk.html %}
     {% endif %}
     <div class="wrapper">
@@ -60,7 +60,7 @@
 
       <footer>
         <!-- facebook -->
-        <!-- {% if site.comments.facebook.appid %}
+        <!-- {% if site.facebook.appid %}
         {% include fb-page.html %}
         {% endif %} -->
 

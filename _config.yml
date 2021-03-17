@@ -1,7 +1,8 @@
 
 title: Project ZZOM
 description: 1인출판 프로젝트
-logo: "assets/images/zzom-logo-light (200 x 200).png"
+# logo: "assets/images/zzom-logo-light (200 x 200).png"
+logo: "assets/images/zzom-banner-light (1024 x 682).jpg"
 theme: jekyll-theme-minimal
 lang: ko-KR
 collections: 
@@ -26,10 +27,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-comments:
-  facebook:
-    appid: 689649528577550
-    num_posts: 10
-    order_by: "reverse_time"
+facebook:
+  appid: 689649528577550
+  comments_count: false
+  num_posts: 10
+  order_by: "reverse_time"
 paginate: 2
 paginate_path: "/blog/page:num/"

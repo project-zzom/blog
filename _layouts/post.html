@@ -9,7 +9,7 @@ layout: default
 {{ content }}
 </div>
 
-{% if site.comments.facebook.appid %}
+{% if site.facebook.appid %}
 {% include fb-like-button.html %}
 {% endif %}
 
@@ -24,16 +24,16 @@ layout: default
 </ul>
 {% endif %}
 
-{% if site.comments.facebook.appid %}
+{% if site.facebook.comments_count %}
 <h2>댓글</h2>
 {% include fb-comments.html %}
 {% endif %}
 
 <div id="pagination">
   {% if page.previous.url %}
-  <a class="prev" href="{{page.previous.url | relative_url}}">&laquo; {{page.previous.title}}</a>
+  <a class="prev" href="{{page.previous.url | relative_url}}">&#10096; {{page.previous.title}}</a>
   {% endif %}
   {% if page.next.url %}
-  <a class="next" href="{{page.next.url | relative_url}}">{{page.next.title}} &raquo;</a>
+  <a class="next" href="{{page.next.url | relative_url}}">{{page.next.title}} &#10097;</a>
   {% endif %}
 </div>
