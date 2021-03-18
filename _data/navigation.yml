@@ -8,10 +8,10 @@
   # link: /blog.html
   link: /
   target: _self  
-- name: 작품 목록
+- name: 도서 목록
   link: /books.html
   target: _self  
-# - name: 작품 목록 (타사 콜라보)
+# - name: 도서 목록 (타사 콜라보)
 #   link: https://codelabor.github.io/translating-developer/  
   target: _blank  
 - name: 관련 링크

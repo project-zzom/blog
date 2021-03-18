@@ -3,13 +3,16 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <h2>{{ page.description }}</h2>
+<div class="content">
+  {{ page.content }}
+  </div>
 
-{{ page.content }}
-
-<h1>관련 게시물</h1>
+{% assign filtered_posts = site.posts | where: 'book', page.name %}
+{% if filtered_posts.size > 0 %}
+<h2>관련 이야기</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'book', page.name %}
-  {% for post in filtered_posts %}
+{% for post in filtered_posts %}
   <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-  {% endfor %}
+{% endfor %}
 </ul>
+{% endif %}

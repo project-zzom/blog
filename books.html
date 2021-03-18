@@ -3,14 +3,11 @@ layout: default
 title: Books
 ---
 
-<h1>작품 목록</h1>
+<h1>도서 목록</h1>
 
-<ul>
-  {% for book in site.books %}
-  <li>
-    <h2><a href="{{ book.url | relative_url }}">{{ book.name }}</a></h2>
-    <h3>{{ book.description }}</h3>
-    <p>{{ book.excerpt | markdownify }}</p>
-  </li>
-  {% endfor %}
-</ul>
+{% for book in site.books %}
+  <h2><a href="{{ book.url | relative_url }}">{{ book.name }}</a></h2>
+  <span class="excerpt">{{ boom.excerpt | markdownify }}</span>
+  <p>{{ book.description }}</p>
+  <img src="{{ book.image | relative_url }}"/>
+{% endfor %}
